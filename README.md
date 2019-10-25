@@ -42,16 +42,17 @@
     foo@bar:/path$ source venv/bin/activate
     ``` 
 
-    - 
+    - install pytest
     ```console
-    (venv) foo@bar:/path$ pip install -r requirements.
+    (venv) foo@bar:/path$ pip install -r requirements.txt
     ```
-    requirements.txt에는 pytest 포함
+    -[requirements.txt]
     ```
     pytest
     ``` 
     - reload 
-    ctrl+shif+p --> Developer Reload Window
+        - <kbd>ctrl</kbd>+<kbd>shif</kbd>+<kbd>p</kbd>
+        - Developer: Reload Window
 
     - virtual env 자동 설정
         - 자동 설정이 되지 않을 경우
