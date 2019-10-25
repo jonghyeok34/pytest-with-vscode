@@ -54,8 +54,12 @@
         - <kbd>ctrl</kbd>+<kbd>shif</kbd>+<kbd>p</kbd>
         - Developer: Reload Window
 
-    - virtual env 자동 설정
-        - 자동 설정이 되지 않을 경우
+    - 재실행 할 경우 virtual env 자동 실행이 된다.
+        - 자동 실행이 되지 않을 경우
+        - virtual env activate
+        ```console
+        foo@bar:/path$ source venv/bin/activate
+        ``` 
         
 
 3. setting 설정 (http://doc.pytest.org/en/latest/goodpractices.html)
@@ -73,12 +77,13 @@
     ```
 
     - setting.py
-    PROJECTNAME = 저장될 이름
+    
     ```python
     from setuptools import setup, find_packages
 
     setup(name="PROJECTNAME", packages=find_packages())
     ```
+    PROJECTNAME = 저장될 이름
 
     - project module 생성
     ```
