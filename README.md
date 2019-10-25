@@ -42,14 +42,15 @@
     foo@bar:/path$ source venv/bin/activate
     ``` 
 
+    - [requirements.txt]
+    ```
+    pytest
+    ```
+
     - install pytest
     ```console
     (venv) foo@bar:/path$ pip install -r requirements.txt
     ```
-    -[requirements.txt]
-    ```
-    pytest
-    ``` 
     - reload 
         - <kbd>ctrl</kbd>+<kbd>shif</kbd>+<kbd>p</kbd>
         - Developer: Reload Window
@@ -90,10 +91,9 @@
     (venv) foo@bar:/path$ pip install .
     ```
 
-    - window reload
-    ctrl+shif+p --> Developer Reload Window
-
-    - 
+    - reload 
+        - <kbd>ctrl</kbd>+<kbd>shif</kbd>+<kbd>p</kbd>
+        - Developer: Reload Window
 
 4. pytest.ini 설정 - 해당 mark 등록(https://docs.pytest.org/en/latest/mark.html)
     - warning 메시지 없애기
