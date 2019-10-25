@@ -95,8 +95,11 @@
     PROJECTNAME = 저장될 이름
 
     - project module 생성
+    editable mode 로 해당 디렉토리에서 수정 가능한 패키지 install:
+
     ```console
-    (venv) foo@bar:/path$ pip install .
+    (venv) foo@bar:/path$ 
+    pip install -e .
     ```
 
     - reload 
