@@ -87,8 +87,51 @@
 
     - project module 생성
     ```
-    (venv) foo@bar:/path$ pip install --editable .
+    (venv) foo@bar:/path$ pip install .
     ```
 
     - window reload
     ctrl+shif+p --> Developer Reload Window
+
+    - 
+
+4. pytest.ini 설정 - 해당 mark 등록(https://docs.pytest.org/en/latest/mark.html)
+    - warning 메시지 없애기
+    ```
+    is this a typo?  You can register custom marks to avoid this warning
+    ```
+    - file 구조
+    ```
+    - .vscode
+        - settings.json
+    - app
+        - services
+    - tests
+        - services
+            -test_calc_service.py
+    - venv
+    - requirements.txt
+    - setting.py
+    - pytest.ini
+    ```
+
+    - pytest.ini 파일 ( service) python test 파일에 등록된 mark 이름과 설명
+
+    ```ini
+    [pytest]
+    markers =
+        service: default service
+    ```
+    - test_calc_service.py
+    ```python
+    @pytest.mark.service
+    def test_add1():
+
+        number = 1
+        assert calc_service.add1(number) == 2
+    ```
+    
+5. output 보기
+    - ![](/img/1.png)
+    - ![](/img/2.png)
+    - ![](/img/3.png)

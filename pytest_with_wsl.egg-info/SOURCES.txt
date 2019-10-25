@@ -1,7 +1,0 @@
-README.md
-setup.py
-app/main.py
-pytest_with_wsl.egg-info/PKG-INFO
-pytest_with_wsl.egg-info/SOURCES.txt
-pytest_with_wsl.egg-info/dependency_links.txt
-pytest_with_wsl.egg-info/top_level.txt
