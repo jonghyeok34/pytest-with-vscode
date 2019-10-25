@@ -11,7 +11,7 @@
     ```
 
 1. setting.json 설정 
-    ```json
+    ```javascript
     {
 	    
 	    "python.pythonPath": "./venv/bin/python", // python path
