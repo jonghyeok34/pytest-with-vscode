@@ -1,3 +1,11 @@
+# pytest vscode 에서 사용하기( WSL/ virtual env 같이 사용 할 시)
+
+0. remote wsl 다운 후 wsl로 시작
+    - ![](/img/0-1.png)
+    - ![](/img/0-2.png)
+    - ![](/img/0-3.png)
+
+
 0. directory
     ```
     - .vscode
