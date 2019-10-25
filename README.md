@@ -87,7 +87,7 @@
     PROJECTNAME = 저장될 이름
 
     - project module 생성
-    ```
+    ```console
     (venv) foo@bar:/path$ pip install .
     ```
 
