@@ -72,6 +72,10 @@
         
 
 3. setting 설정 (http://doc.pytest.org/en/latest/goodpractices.html)
+    - 해당 에러 해결 해야함.
+    ```
+    ModuleNotFoundError: No module named 'app'
+    ```
     - file tree
     ```
     - .vscode
@@ -98,8 +102,7 @@
     editable mode 로 해당 디렉토리에서 수정 가능한 패키지 install:
 
     ```console
-    (venv) foo@bar:/path$ 
-    pip install -e .
+    (venv) foo@bar:/path$ pip install -e .
     ```
 
     - reload 
