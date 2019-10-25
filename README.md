@@ -12,7 +12,7 @@
 
 1. setting.json 설정 
     ```json
-    	{
+    {
 	    
 	    "python.pythonPath": "./venv/bin/python", // python path
 	    "python.venvPath": "venv", // virtual env path
