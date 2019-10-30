@@ -138,7 +138,7 @@
             - top_level.txt
         - requirements.txt
         ```
-        
+
         - reload
             - <kbd>ctrl</kbd>+<kbd>shif</kbd>+<kbd>p</kbd>
             - Developer: Reload Window
@@ -174,11 +174,11 @@
 
 4. warning 메시지 없애기
    
-   - pytest.ini 설정 - 해당 mark 등록(https://docs.pytest.org/en/latest/mark.html)
 
    ```
    is this a typo?  You can register custom marks to avoid this warning
    ```
+   - pytest.ini 설정 - 해당 mark 등록(https://docs.pytest.org/en/latest/mark.html)
 
    - file 구조
 
@@ -214,8 +214,23 @@
        assert calc_service.add1(number) == 2
    ```
 
+5. pycache 생성 막기
+    
+    - bashrc 수정
+    ```console
+    (venv) foo@bar:/path/$ cd ~
+    (venv) foo@bar:~$ vim .bashrc 
+    ```
 
-5. output 보기
+    - 해당 문구 추가 후 bashrc 실행
+    ```vim
+    export PYTHONDONTWRITEBYTECODE=1
+    ```
+    ```
+    (venv) foo@bar:~$ source .bashrc 
+    ```
+
+6. output 보기
    - ![](/img/1.png)
    - ![](/img/2.png)
    - ![](/img/3.png)
