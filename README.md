@@ -79,8 +79,7 @@
      foo@bar:/path$ source venv/bin/activate
      ```
 
-3. 해당 에러 해결 해야함.
-    - 
+3. 에러 해결
 
     ```
     ModuleNotFoundError: No module named 'app'
@@ -169,9 +168,9 @@
 
     
 
-4. pytest.ini 설정 - 해당 mark 등록(https://docs.pytest.org/en/latest/mark.html)
-
-   - warning 메시지 없애기
+4. warning 메시지 없애기
+   
+   - pytest.ini 설정 - 해당 mark 등록(https://docs.pytest.org/en/latest/mark.html)
 
    ```
    is this a typo?  You can register custom marks to avoid this warning
