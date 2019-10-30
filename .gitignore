@@ -5,3 +5,4 @@ __pycache__
 .pytest_cache
 .cache
 .fonts/
+pytest_with_wsl.egg-info
