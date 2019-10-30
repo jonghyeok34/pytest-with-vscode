@@ -138,6 +138,10 @@
             - top_level.txt
         - requirements.txt
         ```
+        
+        - reload
+            - <kbd>ctrl</kbd>+<kbd>shif</kbd>+<kbd>p</kbd>
+            - Developer: Reload Window
 
     2. 방법 2 = .bashrc 설정
 
@@ -162,9 +166,9 @@
         (venv) foo@bar:~$ source .bashrc 
         ```
     
-   - reload
-     - <kbd>ctrl</kbd>+<kbd>shif</kbd>+<kbd>p</kbd>
-     - Developer: Reload Window
+        - reload
+            - <kbd>ctrl</kbd>+<kbd>shif</kbd>+<kbd>p</kbd>
+            - Developer: Reload Window
 
     
 
