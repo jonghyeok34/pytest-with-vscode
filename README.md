@@ -86,7 +86,7 @@
    ModuleNotFoundError: No module named 'app'
    ```
 
-   3. 1. 방법 1 = setup.py 설정
+   1. 방법 1 = setup.py 설정
     setting 설정 (http://doc.pytest.org/en/latest/goodpractices.html)
 
     - file tree
@@ -140,7 +140,7 @@
     - requirements.txt
     ```
 
-    3. 2. 방법 2 = .bashrc 설정
+    2. 방법 2 = .bashrc 설정
 
     
     - 해당 디렉토리 찾기
