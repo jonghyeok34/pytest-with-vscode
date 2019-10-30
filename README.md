@@ -5,7 +5,7 @@
    - ![](/img/0-2.png)
    - ![](/img/0-3.png)
 
-0) directory
+0. directory
 
    ```
     - .vscode
@@ -19,7 +19,7 @@
     - requirements.txt
    ```
 
-1) setting.json 설정
+1. setting.json 설정
 
    ```javascript
    {
@@ -41,7 +41,7 @@
 
    ```
 
-1) virtual env 설정
+2. virtual env 설정
 
    - virtual env 생성
 
@@ -80,88 +80,88 @@
      ```
 
 3. 해당 에러 해결 해야함.
-   - 
-
-   ```
-   ModuleNotFoundError: No module named 'app'
-   ```
-
-   1. 방법 1 = setup.py 설정
-    setting 설정 (http://doc.pytest.org/en/latest/goodpractices.html)
-
-    - file tree
+    - 
 
     ```
+    ModuleNotFoundError: No module named 'app'
+    ```
+
+    1. 방법 1 = setup.py 설정
+        setting 설정 (http://doc.pytest.org/en/latest/goodpractices.html)
+
+        - file tree
+
+        ```
+            - .vscode
+                - settings.json
+            - app
+                - services
+                - __init__.py
+            - tests
+                - services
+                - __init__.py
+            - setup.py
+            
+        ```
+
+        - setup.py
+
+        ```python
+        from setuptools import setup, find_packages
+
+        setup(name="PROJECTNAME", packages=find_packages())
+        ```
+
+        PROJECTNAME = 저장될 이름
+
+        - project module 생성
+        해당 디렉토리에 경로 패키지 install:
+
+        ```console
+        (venv) foo@bar:/path/app$ pip install -e .
+        ```
+
+        - file tree
+
+        ```
         - .vscode
             - settings.json
         - app
             - services
-            - __init__.py
+            - setup.py
         - tests
             - services
-            - __init__.py
-        - setup.py
-        
-    ```
-
-    - setup.py
-
-    ```python
-    from setuptools import setup, find_packages
-
-    setup(name="PROJECTNAME", packages=find_packages())
-    ```
-
-    PROJECTNAME = 저장될 이름
-
-    - project module 생성
-    해당 디렉토리에 경로 패키지 install:
-
-    ```console
-    (venv) foo@bar:/path/app$ pip install -e .
-    ```
-
-    - file tree
-
-    ```
-    - .vscode
-        - settings.json
-    - app
-        - services
-        - setup.py
-    - tests
-        - services
-    - venv
-    - PROJECTNAME
-        - dependency_links.txt
-        - PKG-INFO
-        - SOURCES.txt
-        - top_level.txt
-    - requirements.txt
-    ```
+        - venv
+        - PROJECTNAME
+            - dependency_links.txt
+            - PKG-INFO
+            - SOURCES.txt
+            - top_level.txt
+        - requirements.txt
+        ```
 
     2. 방법 2 = .bashrc 설정
 
     
-    - 해당 디렉토리 찾기
-     
-    ```
-    (venv) foo@bar:/path/$ pwd
-    /path
-    ```
-    - bashrc 수정
-    ```console
-    (venv) foo@bar:/path/$ cd ~
-    (venv) foo@bar:~$ vim .bashrc 
-    ```
+        - 해당 디렉토리 찾기
+        
+        ```
+        (venv) foo@bar:/path/$ pwd
+        /path
+        ```
+        - bashrc 수정
+        ```console
+        (venv) foo@bar:/path/$ cd ~
+        (venv) foo@bar:~$ vim .bashrc 
+        ```
 
-    - 해당 디렉토리의 app 경로 추가후 bashrc 실행
-    ```vim
-    export PYTHONPATH="/path/app"
-    ```
-    ```
-    (venv) foo@bar:~$ source .bashrc 
-    ```
+        - 해당 디렉토리의 app 경로 추가후 bashrc 실행
+        ```vim
+        export PYTHONPATH="/path/app"
+        ```
+        ```
+        (venv) foo@bar:~$ source .bashrc 
+        ```
     
    - reload
      - <kbd>ctrl</kbd>+<kbd>shif</kbd>+<kbd>p</kbd>
